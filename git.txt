@@ -20,8 +20,23 @@
 文件修改：
 1.运行git status命令,可以让我们时刻掌握仓库当前的状态，有没有需要提交的
 
-2.git diff顾名思义就是查看difference
+2.git diff NAME顾名思义就是查看difference
 
-3.提交修改和提交新文件是一样的两步，第一步是git add
+3.提交修改和提交新文件是一样的两步，第一步是git add NAME
 
 4.$ git commit -m "add distributed"
+
+查看修改：
+git log命令显示从最近到最远的提交日志
+
+回退版本
+1.首先，Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，也就是最新的提交3628164...882e1e0（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+
+2.回退到上一个版本
+$ git reset --hard HEAD^
+
+3.查看当前版本
+$ cat NAME
+
+4.恢复最新版本
+$ git reset --hard （3628164部分版本号）
