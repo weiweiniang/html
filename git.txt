@@ -1,0 +1,18 @@
+1、首先在github服务器建立仓库
+2、在本地Github文件夹内执行git clone xxx命令将远程服务器的文件夹克隆到本地
+举例：git clone https://github.com/uhayate/TDD-with-Python.git 至此，可以将TDD-with-Python这个仓库克隆到本地
+3、进入TDD-with-Python这个文件夹，
+假如现在我在这个文件夹写了代码，欲将本地代码同步到服务器端
+命令1：git add .
+注：这个命令把你修改的文件放进了git的暂存区
+.表示所有文件，是一种简单方法，这会导致这次所有修改的文件一起提交，并且造成问题。
+命令2：git commit -m "注释"
+是将暂存区的文件加上同样的注释。这就是造成的问题，比如这次你的两个文件并不想使用同一个注释。想分别注释的话就要分别git add
+命令3： git push origin master
+这个命令是提交到主干，如果提交到分支要改变master名字，写对应的分支名字
+
+
+假如你要删除服务器端文件，
+1、git rm 文件名
+2、git commit -m "注释" 
+3、git push origin master
