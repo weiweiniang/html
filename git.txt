@@ -39,4 +39,4 @@ $ git reset --hard HEAD^
 $ cat NAME
 
 4.恢复最新版本
-$ git reset --hard （3628164部分版本号）
+$ git reset --hard （3628164部分版本号）asdfgsdfzxdfsdfsdfasaff
