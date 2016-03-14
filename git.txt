@@ -16,3 +16,12 @@
 1、git rm 文件名
 2、git commit -m "注释" 
 3、git push origin master
+
+文件修改：
+1.运行git status命令,可以让我们时刻掌握仓库当前的状态，有没有需要提交的
+
+2.git diff顾名思义就是查看difference
+
+3.提交修改和提交新文件是一样的两步，第一步是git add
+
+4.$ git commit -m "add distributed"
